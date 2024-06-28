@@ -2,8 +2,10 @@
 #include <vector>
 #include <algorithm>
 #include <numeric>
-#include <sstream>
+#include <iostream>
 #include <string>
+#include <sstream>
+#include <cstdlib> 
 
 using namespace std;
 
