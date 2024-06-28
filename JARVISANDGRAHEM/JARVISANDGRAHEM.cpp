@@ -5,16 +5,13 @@ using namespace std;
 
 
 int main() {
+    std::locale loc("ru_RU.UTF-8");
     SetConsoleOutputCP(1251);
     std::string input;
     int n;
     do {
         std::cout << "Введите количество точек (должно быть натуральным числом и >= 3 или введите 'exit' для выхода): ";
         std::getline(std::cin, input);
-
-        if (input == "exit") {
-            return 0; // Завершение программы
-        }
 
         if (is_int(input)) {
             n = std::stoi(input);
